@@ -1,121 +1,120 @@
-<!doctype html>
-<html>
-    <head>
-        <style>
-            body{
-    font-family:Arial;
-}
-.out_border{
-    background-color:rgb(167, 15, 40);
-    height:75vh;
-    width:1200px;
-    margin-left:150px;
-}
-.in_border{
-    background-color:rgb(84, 19, 30);
-    height:65vh;
-    width:800px;
-    margin-left:150px;
-    padding-right:200px;
-    left:100px;
-}
-.name{
-    padding-left:300px;
-    padding-top: 30px;
-    word-spacing:100px;
-}
-.email{
-    padding-left:300px;
-    padding-top:20px;
-    word-spacing:102px;
-}
-.password{
-    padding-left:300px;
-    padding-top: 20px;
-    word-spacing:72px;
-}
-.phone{
-    padding-left:300px;
-    padding-top: 20px;
-    word-spacing:30px;
-}
-.gender{
-    padding-left:300px;
-    padding-top: 20px;
-    word-spacing:50px;
-}
-.language{
-    padding-left:300px;
-    padding-top: 20px;
-    word-spacing:70px;
-}
-.zip{
-    padding-left:300px;
-    padding-top: 20px;
-    word-spacing:70px;
-}
-.about{
-    padding-left:300px;
-    padding-top: 20px;
-    word-spacing:98px;
-}
-.input_about{
-    height:40px;
-    width:175px;
-    place-content:top-left;
-}
-.button{
-    background-color:white;
-    color:black;
-    text-align:center;
-    height:40px;
-    width:450px;
-    border-radius:10px;
-}
-.b{
-    padding-left:300px;
-    padding-top:40px;
-}
-        </style>
-    </head>
-    <body>
-        <div class="out_border">
-            <div class="in_border">
-                <div class="name">
-                <span style="color: white;">Name:</span>
-                <input placeholder="your name"></input></div>
-                <div class="email">
-                    <span style="color: white;">Email:</span>
-                    <input placeholder="your email"></input></div>
-                <div class="password">
-                    <span style="color: white;">Password:</span>
-                    <input type="password"></input></div>
-                <div class="phone">
-                    <span style="color: white;">Phone_Number:</span>
-                    <input type="number"></input></div>
-                <div class="gender">
-                    <span style="color: white;">Gender:</span>
-                    <input type="radio">Male</input>
-                    <input type="radio">Female</input>
-                    <input type="radio">Other</input>
-                </div>
-                <div class="language">
-                    <span style="color: white;">Language:</span>
-                    <input placeholder="Select language" type="select"></input>
-                </div>
-                <div class="zip">
-                    <span style="color: white;">Zip_Code:</span>
-                    <input type="number"></input>
-                </div>
-                <div class="about">
-                    <span style="color: white;">About:</span>
-                    <input class="input_about" placeholder="Write about yourself..." type="text"></input>
-                </div>
-                <div class="b">
-                    <button class="button" style="font-size:large"><b>Register</b></button>
-                </div>
-            </input>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML-Task7</title>
+    <link rel="stylesheet" href="cssT7style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="table-form">
+          <form action="#">
+            <table>
+              <tr>
+                <td>
+                  <label for="name">Name:</label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="your name"
+                    size="25"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="email">Email:</label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="email"
+                    placeholder="your email"
+                    size="25"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="password">Password:</label>
+                </td>
+                <td>
+                  <input type="password" name="pasword" size="25" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="phoneNumber">Phone Number:</label>
+                </td>
+                <td>
+                  <input type="text" name="phoneNumber" size="25" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="gender">Gender:</label>
+                </td>
+                <td>
+                  Male:<input type="radio" name="gender" /> Female:<input
+                    type="radio"
+                    name="gender"
+                  />
+                  Other:<input type="radio" name="gender" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="language">language</label>
+                </td>
+                <td>
+                  <select>
+                    <option>Select language</option>
+                    <option value="english">English</option>
+                    <option value="hindi">Hindi</option>
+                    <option value="tamil">Tamil</option>
+                    <option value="telugu">Telugu</option>
+                    <option value="malayalam">Malayalam</option>
+                    <option value="odia">Odia</option>
+                    <option value="marathi">Marathi</option>
+                    <option value="gujarati">Gujarati</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="zip">Zip Code:</label>
+                </td>
+                <td>
+                  <input type="text" name="zip" size="25" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="about">About:</label>
+                </td>
+                <td>
+                  <textarea
+                    type="text"
+                    name="about"
+                    placeholder="Write about yourself..."
+                    style
+                    width="25"
+                  ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td class="button" colspan="2">
+                  <input class="button" type="submit" value="Register" />
+                </td>
+              </tr>
+            </table>
+          </form>
         </div>
-    </body>
+      </div>
+    </div>
+  </body>
 </html>

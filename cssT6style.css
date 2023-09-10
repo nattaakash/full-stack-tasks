@@ -1,0 +1,36 @@
+.image {
+  text-align: center;
+  height: 15p;
+  width: 500px;
+  background-color: white;
+  margin-left: 400px;
+  margin-top: 30px;
+  border: radius 40px;
+}
+.content {
+  margin-left: 400px;
+}
+.input {
+  width: 500px;
+}
+.b1 {
+  background-color: green;
+  color: white;
+  text-align: center;
+  height: 30px;
+  width: 500px;
+}
+.b2 {
+  background-color: red;
+  color: white;
+  text-align: center;
+  height: 4vh;
+  width: 70px;
+  margin-top: 12px;
+}
+.foot {
+  background-color: lightgray;
+  height: 6vh;
+  width: 500px;
+  word-spacing: 300px;
+}
